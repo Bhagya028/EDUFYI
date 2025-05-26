@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Home Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">⚙️</div>
+      <nav>
+        <ul>
+          <li>🏠</li>
+          <li>🎵</li>
+          <li>🔔</li>
+          <li>⚙️</li>
+        </ul>
+      </nav>
+      <div class="profile">
+        <img src="profilepic.png" alt="Profile" />
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div>
+      <!-- Live Room Feed -->
+      <div class="room-feed">
+       <!-- Header -->
+      <header class="header">
+        <button class="live">🔴 Live</button>
+        <div class="status">
+          <button class="live">🌡️ 24°C</button>
+          <button class="live">💧 50%</button>
+          <button class="live">⚡ 350W</button>
+          <button class="live">🔋 80%</button>
+        </div>
+      </header>
+      </div>
+      
+      <!-- Room Selector -->
+    <div class="rooms">
+      <h3>Rooms</h3>
+      <ul>
+        <li>Bedroom (3 devices)</li><br><br>
+        <li>Kitchen (2 devices)</li><br><br>
+        <li class="active">Living Room (5 devices)</li><br><br>
+        <li>Bathroom (1 device)</li><br><br>
+      </ul>
+      <button class="add-room">+ Add Room</button>
+    </div>
+    </div>
+    <div>
+      <!-- Device Widgets -->
+        <!-- Vacuum Widget -->
+        <div style="height:300px;width:80%; float:left">
+        <div class="widget vacuum" style="height:300px;width:55%; float:left;
+					background-image:url('robot vacuum.jpg');
+					background-size:contain;
+                                        background-repeat:no-repeat;
+  background-position: center;">
+          <h3>Bedroom</h3>
+          <p>Robot vacuum cleaner</p>
+          <button style="height:50px;width:100px;margin:10px;background-color:light-grey;border-radius:6px">90% <br>Filter Status</button><br><br>
+	  <button style="height:50px;width:100px;margin-left:380px;background-color:light-grey;border-radius:6px">10:00 AM<br> Next Cleaning</button>
+          <br><br>
+          <button style="height:50px;width:130px;margin:10px;background-color:grey;border-radius:20px">75m<sup>2</sup> <br>Area cleaned</button>
+          <button style="height:50px;width:130px;margin:10px;background-color:grey;border-radius:20px">30 min <br>Cleaning time</button>
+          <button style="height:50px;width:130px;margin:10px;background-color:grey;border-radius:20px">80% <br>Battery change</button>
+        </div>
+
+        <!-- Smart Lamp -->
+        <div class="widget lamp" style="height:300px;width:38%;float:left;margin-left:10px;
+					background-image:url('lightimg.jpg')">
+          <h3>Living room</h3>
+	  <br><br><br><br><br><br>
+          <p>Smart Lamp</p>
+          <span>3 devices</span><br><br>
+	  <button style="height:60px;width:150px;border-radius:12px;text-align:right;background-color:grey;padding:10px;
+		position:relative;left:30px">|</button>
+	  <button style="height:60px;width:100px;border-radius:12px;text-align:right;padding:10px;margin-right:50px">70%</button>		
+        </div>
+        </div>
+        <!-- Music Player -->
+        <div class="widget speaker" style="height:300px;width:20%;float:left">
+          <h3>Speakers</h3>
+          <p>Now Playing</p>
+          <img src="speakers.jpg" alt="Now Playing" style="border-radius:80%;height:150px;width:150px;margin:20px" />
+          <div class="controls">
+            <button>⏮</button>
+            <button>⏯</button>
+            <button>⏭</button>
+          </div>
+        </div>
+     </div>
+    </main>
+
+    
+  </div>
+</body>
+</html>
